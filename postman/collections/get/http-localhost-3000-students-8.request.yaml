@@ -1,0 +1,9 @@
+$kind: http-request
+name: http://localhost:3000/students/8
+description: ""
+url: http://localhost:3000/students/8
+method: GET
+body:
+  type: json
+  content: ""
+order: 1790800617212
