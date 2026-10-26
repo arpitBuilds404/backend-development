@@ -2,7 +2,7 @@ use("googledb");
 // db.employee.insert(
 //     {
 // empID:101,
-// Name:"rajesh",
+// Name:"jajesh",
 // salary:500000,
 // department:"finance",
 // contact:12345678,
@@ -13,7 +13,7 @@ use("googledb");
 // db.employee.insertOne(
 //     {
 // empID:103,
-// Name:"ritu",
+// Name:"chitu",
 // salary:500000,
 // department:"finance",
 // contact:12345678,
@@ -26,7 +26,7 @@ use("googledb");
 //     [
 //         {
 //              empID:102,
-// Name:"raj",
+// Name:"rajesh",
 // salary:500000,
 // department:"it",
 // contact:12345678,
@@ -81,11 +81,19 @@ use("googledb");
 
 ///OR
 
-db.employee.find(
-    {
-        $or:[
-            {department:"it"},
-            {age:{$gt:28}}
-        ]
-    }
-)
+// db.employee.find(
+//     {
+//         $or:[
+//             {department:"it"},
+//             {age:{$gt:28}}
+//         ]
+//     }
+// )
+// db.employee.find(
+//     { department: "finance" },
+//     { Name: 1, department: 1, salary: 1, _id: 0 }
+// )
+
+// db.employee.find().skip(2).limit(2)
+
+db.employee.find().sort({empID:-1})
