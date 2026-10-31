@@ -196,7 +196,7 @@ app.use((req, res) => {
 });
 
 // ==========================================
-// 7. Connect MongoDB and start server
+// 7. ConnectMongoDB and start server
 // ==========================================
 async function startServer() {
     try {
